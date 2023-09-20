@@ -1,0 +1,40 @@
+body{
+    color: yellowgreen;
+}
+header{
+display: flex;
+justify-content:space-between;
+align-items:center;
+min-height: 70x;
+background-color: black;
+padding: 10px;
+}
+a{
+    text-decoration: none;
+    color:yellowgreen;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 500;
+    padding-right: 10px;
+}
+nav a:hover{
+    color:aliceblue;
+}
+
+@media (max-width:700){
+    header{
+        flex-direction:column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
