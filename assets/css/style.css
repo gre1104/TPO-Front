@@ -3,6 +3,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 width:100%;
 }
+/* estilo de cabecera */
 header{
 display: flex;
 justify-content:space-between;
@@ -10,7 +11,6 @@ align-items:center;
 /* position: fixed;
 z-index: 10;
  */
- width:;
 min-height: 70px;
 background-color:#0F2012;
 padding: 10px;
@@ -56,30 +56,35 @@ h1{
     text-align: center;
 }
 
-.box-cards{
+/* .box-cards{
     box-sizing: border-box;
     border:solid #EBAD15 1px;
-}
+} */
+
+/* estilos de tarjetas */
 .box-cards{
+    box-sizing: border-box;
+    border: solid #576059 1px;
+    background-color: #0F2012;
+    padding:15px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background-color:#0F2012;
-    padding: 15px;
-    margin: 0;
-    /* width: 100%; */
- }
+grid-template-columns:1fr 1fr 1fr;
+}
 p{
     text-align: center;
     padding: 1px;
- }
-.item-box{
-display: flex;
-flex-direction: column;
-align-items: center;
-border: solid #EBAD15 1px;
-border-radius: 5%;
 }
+.item-box{
+    border-radius: 5%; 
+    border: solid #576059 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+/* estilos de formulario */
 .section.contacto{
     box-sizing: border-box;
     border: solid #576059;
@@ -119,6 +124,12 @@ margin: 10px;
     color: #0F2012;
 }
 /* estilos de la galeria */
+.texto-galeria{
+    background-color: #0F2012;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
 .contenedor{
     box-sizing: border-box;
     background-color: #0F2012;
@@ -141,6 +152,7 @@ padding: 0;
     transform: rotate(-1,2deg) scale(1.05);
     transition:0.06s ease-out;
 }
+/* estilo del footer */
 footer{
     display: flex;
     flex-flow: column;
@@ -182,13 +194,10 @@ footer{
     }
 }
 @media screen and (max-width:600) {
-    article 
-.box-cards
-    .item-cards{
-        flex-direction:column;
+    #tarjetas{
+        flex-direction: column;
 }
     section .section.contacto{
     flex-direction: column;
     }
 }
-
