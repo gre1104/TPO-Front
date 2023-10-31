@@ -55,8 +55,34 @@ header{
         font-size: large;
         margin: 5px;
 }
-
-    
+.formu .form{
+    height: 80px;
+    width: 100;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+}
+.form div{
+    padding: 10px;
+}
+.formu form input,
+.formu form button
+select{
+    padding: 1,5px;
+    border: 0;
+    background:none;
+    outline: 0;
+    color: #EBAD15;
+    border-bottom: 1px solid #576059;
+    width: 200px;
+}
+.formu .form button{
+    background: #EBAD15;
+    border: 0;
+    padding: 8px;
+    color: #0F2012;
+}    
     /* estilo del footer */
 footer{
     display: flex;
